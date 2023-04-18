@@ -85,7 +85,7 @@ button,
     outline: none;
     border: none;
     text-decoration: none;
-    padding: 15px 32px;
+    padding: 0.7rem 1.3rem;
     border-radius: 10px;
     text-align: center;
     font-size: var(--font-tamanho-p);
@@ -113,6 +113,7 @@ button:active {
 
 .botao2 {
     background: none;
+    box-shadow: none;
     border: 1px solid;
     border-color: var(--cor-primaria);
     display: flex;
