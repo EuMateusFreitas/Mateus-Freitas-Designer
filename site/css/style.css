@@ -65,7 +65,7 @@ p {
     font-weight: 400;
     line-height: 29px;
     color: #b0a99f;
-
+    margin-top: 0;
 }
 
 .intro {
@@ -84,18 +84,19 @@ button,
     cursor: pointer;
     outline: none;
     border: none;
+    text-decoration: none;
     padding: 15px 32px;
     border-radius: 10px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: var(--font-tamanho-p);
     font-family: "Poppins", sans-serif;
-    margin: 4px 2px;
+    margin: 4px 0.5rem;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 20px 30px -15px var(--cor-primaria);
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
+    display: flex;
+    margin-bottom: 1.5rem;
 }
 
 button:hover,
@@ -114,6 +115,8 @@ button:active {
     background: none;
     border: 1px solid;
     border-color: var(--cor-primaria);
+    display: flex;
+    margin-bottom: 1.5rem
 }
 
 .botao2:hover {
@@ -130,9 +133,28 @@ section {
 }
 
 .largura{
-    width: 80%;
+    width: 85%;
     max-width: 1024px;
     margin: auto;
+}
+
+#inicio {
+    display: grid;
+    grid-template-columns: auto 45% 45%;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#inicio div button i {
+    font-size: 20px;
+    margin: 0 0.4rem 0 0;
+}
+
+.social a {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--cor-clara);
 }
 
 @media screen and (min-width: 1440px) {
@@ -142,10 +164,13 @@ section {
     }
 }
 
-@media screen and (min-width: 768px) {
-    
+@media screen and (max-width: 768px) {
+    #inicio {
+        display: grid;
+        grid-template-columns: 10% auto;
+    } 
 }
 
-@media screen and (min-width: 425px) {
-    
+@media screen and (max-width: 425px) {
+
 }
