@@ -124,6 +124,28 @@ button:active {
     max-width: 50vw;
     min-width: 300px;
 }
+
 section {
     height: 100vh;
+}
+
+.largura{
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .largura {
+        max-width: 1400px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 425px) {
+    
 }
