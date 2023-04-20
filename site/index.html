@@ -82,57 +82,120 @@
 </script>
   <!--==========Link de CSS==========-->
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/scroll.css">
+  <link rel="stylesheet" href="css/slide.css">
   <!--==========Link de fora==========-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <style>
+    .fp-watermark {
+      display: none;
+    }
+  </style>
+
 </head>
 
 <body>
   <header>
 
   </header>
-  <main>
-    <section class="largura" id="inicio">
-      <div class="social" style="display: flex; flex-direction: column;">
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-tiktok'></i></i></a>
-        <a href="#"><i class='bx bxl-youtube'></i></i></a>
-        <a href="#"><i class='bx bxl-linkedin-square'></i></i></a>
-      </div>
-      <div style="display: flex; flex-wrap: wrap">
-        <h1>Identidades Visuais que inspiram</h1>
-        <p>Com uma identidade visual consistente e bem pensada, sua marca conquista mais do que clientes: conquista fãs.
-          Vamos criar algo incrível juntos? 💪🏼💻</p>
-          <button><i class='bx bx-dollar'></i><span>Fazer orçamento</span></button>
-          <button class="botao2"><i class='bx bxl-whatsapp' ></i><span> Atendimento</span></button>
-      </div>
-      <div>
-        <p>Aqui entrará uma apresentação de slide</p>
-      </div>
-    </section>
-    <section class="largura" id="Sobre-mim">
-      <h2>Sobre mim</h2>
+  <main id="fullpage">
+    <div class="section">
+      <section class="largura" id="inicio">
+        <div class="conteudo">
+          <div class="social" style="display: flex; flex-direction: column;">
+            <a target="_blank" rel="author" href="https://www.behance.net/MateusFreitasDsgn"><i
+                class='bx bxl-behance'></i></a>
+            <a target="_blank" rel="author" href="https://www.instagram.com/mateusfreitas.dsgn"><i
+                class='bx bxl-instagram'></i></a>
+            <a target="_blank" rel="author" href="https://www.youtube.com/@MateusFreitasDsgn"><i
+                class='bx bxl-youtube'></i></a>
+            <a target="_blank" rel="author" href="https://www.linkedin.com/in/eumateusfreitas"><i
+                class='bx bxl-linkedin-square'></i></a>
+            <a target="_blank" rel="author" href="https://www.facebook.com/mateusfreitasdsgn"><i
+                class='bx bxl-facebook'></i></a>
+            <a target="_blank" rel="author" href="#"><i class='bx bxl-tiktok'></i></a>
+          </div>
+          <div style="display: flex; flex-wrap: wrap">
+            <h1>Identidades Visuais que inspiram</h1>
+            <p>Com uma identidade visual consistente e bem pensada, sua marca conquista mais do que clientes: conquista
+              fãs.
+              Vamos criar algo incrível juntos? 💪🏼💻</p>
+            <button><i class='bx bx-dollar'></i><span>Fazer orçamento</span></button>
+            <button class="botao2" onclick="window.open('https://api.whatsapp.com/send?phone=5521966625811&text=Ol%C3%A1+Mateus%21+Acabo+de+vim+do+seu+Site.+Como+vai%3F')"><i class='bx bxl-whatsapp'></i><span>Atendimento</span></button>
 
-      <div class="vcard">
-        <img src="android-chrome-192x192.png" alt="Logo Mateus Freitas Designer" class="logo" />
-        <div class="org"><b>Mateus Freitas Designer</b></div>
-        <div><a class="email" href="mailto:www.100porcentomateus@gmail.com">www.100porcentomateus@gmail.com</a></div>
-        <div>Telefone: <span class="tel">(21) 96662-5811</span></div>
-        <div>Especialista em <span class="category">Identidade Visual</span></div>
-        <div class="adr"><span class="region">RJ</span> - <span class="country-name">Brasil</span></div>
-        <div class="url">mateusfreitas.com.br</div>
-      </div>
-
-      <p>Com mais de 10 anos de experiência em design gráfico, ajudo empresas e empreendedores a se destacarem no
-        mercado
-        através de uma comunicação visual eficiente e personalizada.</p>
-    </section>
+          </div>
+        </div>
+        <div class="container">
+          <input type="radio" name="slider" id="item-1" checked="">
+          <input type="radio" name="slider" id="item-2" autoplay="">
+          <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1"><img src="img/slide (1).jpg" alt=""></label>
+            <label class="card" for="item-2" id="song-2"><img src="img/slide (2).jpg" alt=""></label>
+            <label class="card" for="item-3" id="song-3"><img src="img/slide (3).jpg" alt=""></label>
+          </div>
+        </div>
+      </section>
+      <a href="#sobre-mim">
+        <div id="mouse-scroll">
+          <div class="mouse">
+            <div class="mouse-in"></div>
+          </div>
+          <div>
+            <span class="down-arrow-1"></span>
+            <span class="down-arrow-2"></span>
+            <span class="down-arrow-3"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="section">
+      <section class="largura" id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <div class="vcard">
+          <img src="android-chrome-192x192.png" alt="Logo Mateus Freitas Designer" class="logo" />
+          <div class="org"><b>Mateus Freitas Designer</b></div>
+          <div><a class="email" href="mailto:www.100porcentomateus@gmail.com">www.100porcentomateus@gmail.com</a></div>
+          <div>Telefone: <span class="tel">(21) 96662-5811</span></div>
+          <div>Especialista em <span class="category">Identidade Visual</span></div>
+          <div class="adr"><span class="region">RJ</span> - <span class="country-name">Brasil</span></div>
+          <div class="url">mateusfreitas.com.br</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate, nesciunt dolorum rerum nulla
+          maxime perferendis velit officiis quasi. Aspernatur et error consequuntur nihil fugiat vel? Quas laudantium
+          culpa laborum!</p>
+      </section>
+    </div>
+    <div class="section">
+      <section class="largura" id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Aqui você pode conferir alguns dos meus trabalhos:</p>
+        <ul>
+          <li><a href="#">Projeto 1</a></li>
+          <li><a href="#">Projeto 2</a></li>
+          <li><a href="#">Projeto 3</a></li>
+        </ul>
+      </section>
+</div>
   </main>
-  <footer></footer>
+  <footer>
+  </footer>
 
   <!--==========Link de script==========-->
-
+  <script src="js/slide-automatico.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      //opções aqui
+      navigation: true,
+      autoScrolling: true,
+      scrollHorizontally: true,
+      showActiveTooltip: true,
+      navigationTooltips: ["Inicio", "Sobre mim", "Portfólio"],
+    });
+  </script>
 </body>
 
 </html>

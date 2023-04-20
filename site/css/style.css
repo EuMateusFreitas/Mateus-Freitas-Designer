@@ -1,6 +1,13 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+* {
+    transition: all 0.1s ease-in-out;
+
+    /* Tipografica */
+    font-family: "Poppins", sans-serif;
+}
+
 :root {
     /* Paleta de cores*/
     --cor-primaria: #683DE5;
@@ -9,9 +16,6 @@
     --cor-escuro: #1a1c1e;
     --cor-escuro2: #211431;
     --cor-escuro3: #352844;
-
-    /* Tipografica */
-    font-family: "Poppins", sans-serif;
 
     /* Hierarquia Tipografica */
     --font-tamanho-h1: 2.25rem;
@@ -124,27 +128,35 @@ button:active {
     border-color: var(--cor-secundaria);
 }
 
-.comprimento{
+.comprimento {
     max-width: 50vw;
     min-width: 300px;
 }
 
 section {
-    height: 100vh;
+    min-height: 90vh;
 }
 
-.largura{
+.largura {
     width: 85%;
     max-width: 1024px;
     margin: auto;
 }
 
-#inicio {
+#inicio .conteudo {
     display: grid;
-    grid-template-columns: auto repeat(2, minmax(250px, 1fr));
+    grid-template-columns: 10% auto;
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
+}
+
+section#inicio {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    justify-items: center;
 }
 
 #inicio div button i {
@@ -158,6 +170,10 @@ section {
     color: var(--cor-clara);
 }
 
+.social a:hover {
+    color: var(--cor-primaria);
+}
+
 @media screen and (min-width: 1440px) {
     .largura {
         max-width: 1400px;
@@ -166,12 +182,18 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    #inicio {
+    section#inicio {
         display: grid;
-        grid-template-columns: 10% auto;
-    } 
+        grid-template-columns: auto;
+        grid-template-rows: max-content;
+    }
+    #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 425px) {
-
+    div#fp-nav {
+        display: none;
+    }
 }
