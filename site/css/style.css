@@ -21,8 +21,8 @@
     --cor-escuro3: #352844;
 
     /* Hierarquia Tipografica */
-    --font-tamanho-h1: 2.25rem;
-    --font-tamanho-h2: 1.3rem;
+    --font-tamanho-h1: 2rem;
+    --font-tamanho-h2: 1.2rem;
     --font-tamanho-h3: 1rem;
     --font-tamanho-p: 0.941rem;
 }
@@ -44,7 +44,6 @@ body {
 
 .titulo,
 h1 {
-    color: lightgreen;
     font-size: var(--font-tamanho-h1);
     font-weight: 500;
 }
@@ -132,7 +131,7 @@ button:active {
 }
 
 section {
-    min-height: 90vh;
+    min-height: 98vh;
 }
 
 .largura {
