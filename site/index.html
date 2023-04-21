@@ -29,19 +29,16 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#1a9dee">
-  <meta name="theme-color" content="#ffffff">
 
   <!--==========Metatags do Twitter==========-->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mateus Freitas Designer - Especialista em identidade visual">
   <!--coloque seu Título-->
   <meta name="twitter:site" content="@eumateusfreitas">
-  <meta property="twitter:dominio" content="mateusfreitas.com.br"><!--coloque seu Site de destino-->
+  <meta property="twitter:dominio" content="mateusfreitas.com.br">
   <meta property="twitter:url" content="https://mateusfreitas.com.br/">
-  <!--coloque seu Site de destino com "http/https")-->
   <meta name="twitter:description"
     content="Com uma identidade visual consistente e bem pensada, sua marca conquista mais do que clientes: conquista fãs. Vamos criar algo incrível juntos? 💪🏼💻">
-  <!--A descrição do site-->
   <meta name="twitter:image" content="https://i.ibb.co/vhL9dFv/icone.png/og-image.jpg">
 
   <!--==========Metatags do Facebook==========-->
@@ -50,12 +47,10 @@
   <meta property="og:description"
     content="Com uma identidade visual consistente e bem pensada, sua marca conquista mais do que clientes: conquista fãs. Vamos criar algo incrível juntos? 💪🏼💻">
   <meta property="og:title" content="Mateus Freitas Designer - Especialista em identidade visual">
-  <!--coloque seu Título-->
   <meta property="og:image" content="https://i.ibb.co/vhL9dFv/icone.png/og-image.jpg">
-  <meta property="og:url" content="https://mateusfreitas.com.br"><!--coloque seu Site de destino-->
+  <meta property="og:url" content="https://mateusfreitas.com.br">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-
 
   <!--==========Dados estruturados Schema.org==========-->
   <script type="application/ld+json">
@@ -80,6 +75,7 @@
     }
   }
 </script>
+
   <!--==========Link de CSS==========-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/scroll.css">
@@ -198,12 +194,19 @@
   <script src="js/fullpage.min.js"></script>
   <script src="js/fullpage.js"></script>
   <script>
-    new fullpage('#fullpage', {
-    //options here
-    autoScrolling:true,
-    menu: '#menu'
+    // Cria uma nova instância do fullPage.js e define as opções personalizadas
+new fullpage('#fullpage', {
+  menu: false, // Define se o menu de navegação será ativado ou desativado
+  continuousVertical: true, // Define se a rolagem vertical contínua será ativada ou desativada
+  navigation: true, // Define se a navegação por pontos será ativada ou desativada
+  autoScrolling: true, // Define se a rolagem automática será ativada ou desativada
+  scrollHorizontally: true, // Define se a rolagem horizontal será ativada ou desativada
+  controlArrows: false, // Define se as setas de controle serão exibidas ou ocultadas
+  showActiveTooltip: true, // Define se a dica ativa será exibida ou ocultada
+  slidesNavigation: false, // Define se a navegação entre slides será ativada ou desativada
+  navigationTooltips: ["Inicio", "Sobre mim", "Portfólio"] // Define as dicas de ferramentas para cada seção
 });
   </script>
-</body>
 
+</body>
 </html>
