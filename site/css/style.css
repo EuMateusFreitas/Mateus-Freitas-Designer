@@ -130,10 +130,11 @@ button:active {
     min-width: 300px;
 }
 
-/* 
+
 .section {
     min-height: 100vh;
-} */
+    display: flex;
+}
 
 .largura {
     width: 85%;
