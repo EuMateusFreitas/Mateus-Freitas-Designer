@@ -1,14 +1,6 @@
 #mouse-scroll {
-  style: block;
-}
-
-#mouse-scroll {
-  position: fixed;
-  margin: auto;
-  left: 50%;
-  top: 90vh;
-  -webkit-transform: translateX(-50%);
-  z-index: 9999;
+  margin: 0 auto;
+  width: min-content;
 }
 
 #mouse-scroll span {
