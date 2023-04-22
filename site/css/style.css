@@ -197,6 +197,10 @@ section#inicio {
         align-items: start;
     }
 
+    .container {
+        order: -1;
+    }
+
     #fp-nav ul li:hover .fp-tooltip,
     #fp-nav.fp-show-active a.active+.fp-tooltip {
         display: none;
