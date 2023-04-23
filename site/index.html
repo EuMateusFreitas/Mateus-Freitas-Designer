@@ -200,33 +200,7 @@
   <script src="js/fullpage.js"></script>
 
   <script>
-   let startY = 0;
-let lastY = 0;
-
-window.addEventListener('touchstart', function(e) {
-  startY = e.touches[0].clientY;
-});
-
-window.addEventListener('touchmove', function(e) {
-  lastY = e.touches[0].clientY;
-
-  // Verifica se o usuário está rolando para baixo
-  if (lastY < startY) {
-    // Oculta a barra de navegação do Chrome
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
-    document.body.style.overflow = 'hidden';
-  }
-});
-
-window.addEventListener('touchend', function() {
-  // Verifica se o usuário está rolando para cima
-  if (lastY > startY) {
-    // Mostra a barra de navegação do Chrome
-    document.documentElement.style.setProperty('--vh', 'auto');
-    document.body.style.overflow = 'visible';
-  }
-});
-
+    
   </script>
 
   <script>
