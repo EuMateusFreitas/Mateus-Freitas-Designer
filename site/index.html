@@ -200,9 +200,11 @@
   <script src="js/fullpage.js"></script>
 
   <script>
-    $(document).ready(function () {
-      window.scrollTo(0, 1);
-    });
+    window.onload = function() {
+  setTimeout(function() {
+    window.scrollTo(0, 1);
+  }, 0);
+};
   </script>
 
   <script>
