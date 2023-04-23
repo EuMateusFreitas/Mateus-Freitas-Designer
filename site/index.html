@@ -200,11 +200,34 @@
   <script src="js/fullpage.js"></script>
 
   <script>
-    window.onload = function() {
-  setTimeout(function() {
-    window.scrollTo(0, 1);
-  }, 0);
-};
+   // Verifica se o navegador suporta a API de tela cheia
+if (window.fullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled) {
+  // Adiciona um evento de clique para ativar o modo de tela cheia
+  document.addEventListener('click', function() {
+    // Se o elemento raiz já estiver em tela cheia, sai do modo de tela cheia
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    // Se o elemento raiz não estiver em tela cheia, entra no modo de tela cheia
+    } else {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      }
+    }
+  });
+} else {
+  console.log('O modo de tela cheia não é suportado neste navegador.');
+}
+
   </script>
 
   <script>
