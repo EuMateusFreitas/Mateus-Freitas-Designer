@@ -33,7 +33,9 @@
     color: var(--cor-clara);
 }
 
-html {}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--cor-escuro);
