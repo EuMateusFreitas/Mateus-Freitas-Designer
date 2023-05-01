@@ -88,18 +88,18 @@ button,
     outline: none;
     border: none;
     text-decoration: none;
-    padding: clamp(0.65rem, 1.8vw, 0.7rem) clamp(0.4rem, 2.3vw, 1.3rem);
+    padding: clamp(0.8em, 1.8vw, 0.9rem) clamp(0.4rem, 2.3vw, 1.3rem);
     border-radius: var(--quina);
-    text-align: center;
     font-size: var(--font-tamanho-p);
     font-family: "Poppins", sans-serif;
-    margin: 4px.5rem 0 0;
+    margin: 4px 0.5rem 0 0;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 20px 30px -15px var(--cor-primaria);
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
     display: flex;
     margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
 button:hover,
@@ -125,6 +125,12 @@ button:active {
 
 .botao2:hover {
     border-color: var(--cor-secundaria);
+}
+
+.conteudo > div > button {
+    width: 48%;
+    margin-right: 0;
+    height: fit-content;
 }
 
 .comprimento {
