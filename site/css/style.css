@@ -82,6 +82,11 @@ a {
     color: #44a4fc;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 button,
 .botao {
     cursor: pointer;
@@ -190,6 +195,12 @@ section#inicio {
     color: var(--cor-primaria);
 }
 
+.galeria {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(10px, 1.2vw, 40px);
+}
+
 @media screen and (min-width: 1440px) {
     .largura {
         max-width: 1400px;
@@ -205,6 +216,10 @@ section#inicio {
         align-items: start;
     }
 
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .container {
         order: -1;
     }
@@ -218,5 +233,9 @@ section#inicio {
 @media screen and (max-width: 425px) {
     div#fp-nav {
         display: none;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
