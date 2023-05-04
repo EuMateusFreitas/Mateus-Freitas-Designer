@@ -199,6 +199,9 @@ section#inicio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: clamp(10px, 1.2vw, 40px);
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -233,5 +236,9 @@ section#inicio {
 @media screen and (max-width: 425px) {
     div#fp-nav {
         display: none;
+    }
+
+    .largura {
+        width: 90%;
     }
 }
