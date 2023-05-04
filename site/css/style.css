@@ -234,8 +234,4 @@ section#inicio {
     div#fp-nav {
         display: none;
     }
-
-    .galeria {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
