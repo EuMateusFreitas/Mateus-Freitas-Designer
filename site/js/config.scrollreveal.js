@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.sr', {
+ScrollReveal().reveal('h1, h2', {
     duration: 1000,  // duração da animação em milissegundos
     delay: 300,      // tempo de espera antes da animação em milissegundos
     distance: '20px', // distância da animação
