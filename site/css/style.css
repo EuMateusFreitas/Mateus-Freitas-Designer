@@ -43,6 +43,10 @@ body {
 
 }
 
+.sr{
+    visibility: hidden;
+}
+
 .titulo,
 h1 {
     font-size: var(--font-tamanho-h1);
@@ -154,14 +158,14 @@ button:active {
     margin: auto;
 }
 
-#inicio .conteudo {
+.inicio .conteudo {
     display: grid;
     grid-template-columns: 8% auto;
     gap: 1rem;
     justify-content: space-between;
 }
 
-section#inicio {
+section.inicio {
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
@@ -169,11 +173,11 @@ section#inicio {
     justify-items: center;
 }
 
-#inicio div button i {
+.inicio div button i {
     margin: auto 0.4rem auto 0;
 }
 
-#inicio div div button span {
+.inicio div div button span {
     margin: auto 0;
 }
 
@@ -212,7 +216,7 @@ section#inicio {
 }
 
 @media screen and (max-width: 768px) {
-    section#inicio {
+    section.inicio {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: max-content;
