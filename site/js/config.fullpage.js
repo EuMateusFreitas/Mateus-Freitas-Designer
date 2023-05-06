@@ -10,12 +10,4 @@ new fullpage('#fullpage', {
     slidesNavigation: false, // Define se a navegação entre slides será ativada ou desativada
     navigationTooltips: ["Inicio", "Sobre mim", "Portfólio", "Depoimentos"], // Define as dicas de ferramentas para cada seção
     anchors: ["inicio", "sobre-mim", "portfolio", "depoimentos"],
-
-    afterLoad: function(origin, destination, direction) {
-      var section = destination.item;
-      var title = section.querySelector('h1, h2');
-      if (title) {
-        ScrollReveal().reveal(title);
-      }
-    }
   });
